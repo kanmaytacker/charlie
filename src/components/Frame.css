@@ -1,0 +1,76 @@
+.frame-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.index {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: black;
+    color: white;
+}
+
+.score {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.cumulative {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.round {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round.second {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.score div.second {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.third {
+    display: none;
+}
+
+/* 10th Frame */
+.frame-container:last-child {
+    flex: 3;
+}
+
+.frame-container:last-child div.third {
+    display: flex;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.frame-container:last-child div.first {
+    border-bottom: 1px solid black;
+}
+
+.frame-container:last-child .score {
+    border-right: 1px solid black;
+}
+
+.frame-container:last-child .cumulative {
+    border-right: 1px solid black;
+}

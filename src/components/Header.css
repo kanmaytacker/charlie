@@ -1,0 +1,21 @@
+.logo {
+    animation: spin infinite 20s linear;
+    height: 180px;
+}
+
+.header {
+    height: 240px;
+    padding: 20px;
+    color: white;
+    background-color: #282c34;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
